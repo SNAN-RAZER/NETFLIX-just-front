@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(0,0,0,0.9);
+}
+
+.container{
+    background: url('./Images/Icontainer-background.jpg') center/cover no-repeat;
+    min-height: 50vh;
+    width:100%;
+}
+.heading{
+    
+    display: flex;
+    justify-content: space-between;
+    padding:40px 60px;
+    
+}
+.netflixlogo{
+    height: 40px;
+}
+.header-buttons{
+    color: white;
+    display: flex;
+    height: 40px;
+    
+}
+.select-langauge{
+    color: white;
+    background: transparent;
+    margin-right: 20px;
+    border-radius: 6px;
+}
+.signin{
+    padding:5px;
+    text-transform: capitalize;
+    background: red;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.center-text{
+    width:100%;
+    margin: 10px auto;
+    text-align: center;
+    color: white;
+
+}
+.title{
+    line-height: 1.5;
+    padding: 0  30%;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+h2{
+    margin:20px 0;
+}
+
+/* inputs */
+.inputs{
+    display: flex;
+    width:500px;
+    margin: 0 auto;
+    justify-content: center;
+    height: 50px;
+}
+.email-input{
+    width:300px;
+    text-align: left;
+    height: 50px;
+    
+}
+.email-input::placeholder{
+    padding-left: 10px;
+    text-transform: capitalize;
+    
+}
+.get-started{
+    padding: 5px;
+    color: rgb(255,255,255,0.7);
+    text-transform: capitalize;
+    background: rgb(255,0,0,0.9);
+    font-size: 16px;
+    border: none;
+    transition: all 0.5s linear;
+    height: 50px;
+    cursor: pointer;
+}
+.get-started:hover{
+    background:red;
+    
+    color: white;
+}
+@media screen and (max-width:1000px) {
+    .inputs{
+        flex-direction: column;
+        justify-content: space-between;
+        height:130px;
+        
+    }
+    .email-input{
+        /* height: 200px; */
+        width:500px;
+        height:60px;
+    }
+    .get-started{
+        width:110px;
+        margin: 20px auto;
+    }
+    
+}
+@media screen and (max-width:500px) {
+.title{
+    line-height: none;
+    letter-spacing: normal;
+}
+
+}
